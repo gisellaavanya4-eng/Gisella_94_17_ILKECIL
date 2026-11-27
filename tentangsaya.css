@@ -1,0 +1,388 @@
+
+/* =========================================
+   1. DASAR HALAMAN
+========================================= */
+
+.about-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 8%;
+    background: #fff9fc;
+    font-family: 'Poppins', sans-serif;
+    color: #594a63;
+    box-sizing: border-box;
+}
+
+.about-page * {
+    box-sizing: border-box;
+}
+
+/* =========================================
+   2. JUDUL
+========================================= */
+
+.about-header {
+    text-align: center;
+    padding: 25px 15px 35px;
+}
+
+.about-subtitle {
+    color: #b18ab9;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.about-header h1 {
+    color: #89649b;
+    font-size: 38px;
+    margin: 0;
+}
+
+
+.header-decoration {
+    color: #d6a9cf;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+/* =========================================
+   3. BAGIAN PROFIL
+========================================= */
+
+.about-profile {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr;
+    align-items: center;
+    gap: 45px;
+
+    padding: 45px;
+    background: white;
+    border-radius: 28px;
+
+    box-shadow: 0 7px 25px rgba(145, 105, 155, 0.10);
+    overflow: hidden;
+}
+
+/* =========================================
+   4. FOTO PROFIL
+========================================= */
+
+.about-photo-area {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.photo-frame {
+    width: 280px;
+    height: 340px;
+
+    margin: auto;
+    padding: 10px;
+
+    background: linear-gradient(135deg, #eacbe9, #d9cafa);
+    border-radius: 150px 150px 35px 35px;
+
+    box-shadow: 0 8px 20px rgba(150, 110, 165, 0.17);
+    transform: rotate(-3deg);
+
+    transition: 0.4s ease;
+}
+
+.photo-frame:hover {
+    transform: rotate(0deg) scale(1.03);
+}
+
+.photo-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    background: #f8eefa;
+    border: 5px solid white;
+    border-radius: 145px 145px 28px 28px;
+}
+
+.photo-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.photo-inner img:hover {
+    transform: scale(1.08);
+}
+
+.photo-caption {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+
+    color: #986fa5;
+    background: #fbf0fa;
+
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.photo-caption span {
+    color: #d69acb;
+    padding: 0 5px;
+}
+
+/* =========================================
+   5. DEKORASI PROFIL
+========================================= */
+
+.decoration-star,
+.decoration-flower {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.decoration-star {
+    color: #d8b6df;
+    font-size: 35px;
+}
+
+.star-one {
+    top: 35px;
+    left: 35px;
+}
+
+.star-two {
+    bottom: 35px;
+    left: 43%;
+    font-size: 28px;
+}
+
+.decoration-flower {
+    color: #dca6d0;
+    font-size: 37px;
+}
+
+.flower-one {
+    top: 45px;
+    right: 45px;
+}
+
+.flower-two {
+    bottom: 30px;
+    right: 35px;
+    font-size: 30px;
+}
+
+/* =========================================
+   6. TEKS PERKENALAN
+========================================= */
+
+.about-text {
+    position: relative;
+    z-index: 2;
+}
+
+.about-label {
+    color: #b18ab9;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.about-text h2 {
+    color: #89649b;
+    font-size: 30px;
+    margin: 0 0 5px;
+}
+
+.about-text h3 {
+    color: #c18bb9;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.about-text > p:not(.about-label) {
+    color: #65566c;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   7. TOPIK PILIHAN
+========================================= */
+
+.about-topics {
+    margin-top: 65px;
+}
+
+.about-section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.about-section-title h2 {
+    color: #89649b;
+    font-size: 25px;
+    text-align: center;
+}
+
+.about-section-title span {
+    color: #d6a9cf;
+    font-size: 22px;
+}
+
+.topics-intro {
+    text-align: center;
+    color: #9879a5;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.about-topic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.about-topic-card {
+    position: relative;
+    padding: 30px;
+    border-radius: 23px;
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+.about-topic-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(120, 80, 130, 0.12);
+}
+
+.topic-ten {
+    background: #f7eafa;
+}
+
+.topic-thirteen {
+    background: #eaf5ed;
+}
+
+.about-topic-card img {
+    display: block;
+    width: 105px;
+    height: 105px;
+    object-fit: contain;
+    margin: 0 auto 20px;
+
+    transition: 0.4s ease;
+}
+
+.about-topic-card img:hover {
+    transform: scale(1.12) rotate(4deg);
+}
+
+.topic-number {
+    color: #a17bad;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.about-topic-card h3 {
+    color: #765384;
+    font-size: 19px;
+    text-align: center;
+    margin: 10px 0 15px;
+}
+
+.about-topic-card > p:not(.topic-number) {
+    color: #65566c;
+    font-size: 13px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.topic-decoration {
+    display: block;
+    text-align: right;
+    color: #d49ccf;
+    font-size: 24px;
+}
+
+
+
+/* =========================================
+   9. RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .about-page {
+        padding: 20px 5%;
+    }
+
+    .about-header h1 {
+        font-size: 29px;
+    }
+
+    .about-profile {
+        grid-template-columns: 1fr;
+        padding: 30px 22px;
+        gap: 30px;
+    }
+
+    .photo-frame {
+        width: 230px;
+        height: 290px;
+    }
+
+    .about-text h2 {
+        font-size: 25px;
+    }
+
+    .about-topic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section-title h2 {
+        font-size: 20px;
+    }
+
+    .about-message {
+        padding: 28px 22px;
+    }
+
+    .about-message h2 {
+        font-size: 21px;
+    }
+
+    .about-identity div {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .about-identity b {
+        text-align: left;
+    }
+}
+
+body {
+    background-image: url("purple.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}

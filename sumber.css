@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8fc;
+    color: #51445a;
+}
+
+.sumber-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(120, 85, 139, 0.10);
+}
+
+.sumber-container h1 {
+    text-align: center;
+    color: #78558b;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+
+.sumber-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.sumber-list a {
+    display: block;
+    color: #8b65a0;
+    font-size: 14px;
+    line-height: 1.8;
+    text-decoration: none;
+    padding: 12px 15px;
+    background-color: #faf3fd;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+    transition: 0.3s ease;
+}
+
+.sumber-list a:hover {
+    color: #ffffff;
+    background-color: #b58bc9;
+    transform: translateX(6px);
+}
+
+
+
+@media (max-width: 600px) {
+    .sumber-container {
+        width: 92%;
+        padding: 22px 16px;
+        margin: 25px auto;
+    }
+
+    .sumber-container h1 {
+        font-size: 23px;
+    }
+
+    .sumber-list a {
+        font-size: 11px;
+        padding: 11px;
+    }
+}
+body {
+    background-image: url("purple.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}

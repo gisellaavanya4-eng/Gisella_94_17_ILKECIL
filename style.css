@@ -1,0 +1,577 @@
+
+/* =========================================
+   1. RESET DAN PENGATURAN DASAR
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+
+    background-image: url("purple.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #374151;
+    line-height: 1.7;
+}
+
+
+
+/* =========================================
+   2. HEADER
+========================================= */
+
+.header {
+    width: 100%;
+    padding: 8px 12px;
+    background: #fff;
+}
+
+.header img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 12px;
+}
+
+
+/* =========================================
+   3. NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 4px 15px rgba(40, 70, 100, 0.12);
+    border-bottom: 4px solid #f8dce6;
+}
+
+.nav-menu {
+    list-style: none;
+
+    max-width: 1500px;
+    min-height: 90px;
+    margin: auto;
+    padding: 8px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================================
+   4. GAMBAR MENU UTAMA
+========================================= */
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+    border-radius: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.menu-link img {
+    width: 115px;
+    height: 65px;
+
+    object-fit: contain;
+    display: block;
+
+    transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+    background: #fff0f5;
+    transform: translateY(-5px);
+}
+
+.menu-link:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =========================================
+   5. DROPDOWN SUBMENU
+========================================= */
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(15px);
+
+    width: 250px;
+    max-height: 70vh;
+    overflow-y: auto;
+
+    padding: 15px;
+
+    background: linear-gradient(
+        160deg,
+        #ffffff,
+        #ffffff
+    );
+
+    border: 5px solid #ffffff;
+    border-radius: 22px;
+
+    box-shadow: 0 10px 30px rgba(30, 60, 90, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateX(-50%) translateY(0);
+}
+
+
+/* =========================================
+   6. GAMBAR SUBMENU
+========================================= */
+
+.submenu-link {
+    width: 100%;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.submenu-link img {
+    width: 230px;
+    height: 115px;
+
+    object-fit: contain;
+    display: block;
+
+    transition: all 0.3s ease;
+}
+
+.submenu-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.04);
+}
+
+.submenu-link:hover img {
+    filter: brightness(1.08);
+}
+
+
+/* Scrollbar dropdown */
+
+.dropdown-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background: #f9d9e6;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   7. JUDUL BAGIAN
+========================================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h1 {
+    font-size: 34px;
+    font-weight: bold;
+    color: rgb(57, 59, 157);
+    margin-bottom: 10px;
+}
+
+
+
+.section-title p {
+    color: #3f8d87;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   8. PENGENALAN SDGs
+========================================= */
+
+.intro-section {
+    padding: 65px 8%;
+    background: transparent;
+}
+
+.intro-content {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    align-items: stretch;
+    gap: 35px;
+}
+
+
+/* Gambar pengenalan */
+
+.intro-image {
+    flex: 1;
+    display: flex;
+}
+
+.intro-image img {
+    width: 100%;
+    min-height: 280px;
+
+    object-fit: cover;
+    border-radius: 22px;
+
+    border: 6px solid #ffffff;
+
+    box-shadow: 0 8px 25px rgba(70, 100, 130, 0.15);
+
+    transition: 0.4s;
+}
+
+.intro-image img:hover {
+    transform: scale(1.03);
+}
+
+
+/* Kotak teks */
+
+.intro-text {
+    flex: 1.3;
+
+    padding: 30px;
+
+    background: #ffffff;
+    border-radius: 22px;
+
+    border-top: 7px solid #26bde2;
+
+    box-shadow: 0 8px 25px rgba(70, 100, 130, 0.10);
+}
+
+.intro-text p {
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #526273;
+}
+
+.intro-text strong {
+    color: #2686a8;
+}
+
+.intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   9. BAGIAN 17 TUJUAN SDGs
+========================================= */
+
+.goals-section {
+    padding: 65px 7%;
+    background: transparent;
+}
+
+.goals-grid {
+    max-width: 1300px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* Kartu tujuan */
+
+.goal-card {
+    background: #ffffff;
+
+    padding: 15px;
+
+    border-radius: 20px;
+    border: 2px solid #edf0f5;
+
+    text-align: center;
+
+    box-shadow: 0 5px 18px rgba(50, 80, 110, 0.08);
+
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+
+.goal-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #a8ddec;
+
+    box-shadow: 0 12px 25px rgba(50, 80, 110, 0.15);
+}
+
+
+/* Gambar SDGs */
+
+.goal-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 14px;
+    background: #f4f6f8;
+}
+
+.goal-image img {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    object-fit: contain;
+
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+/* Bahasa Indonesia */
+
+.goal-image img:first-child {
+    opacity: 1;
+    z-index: 2;
+}
+
+
+/* Bahasa Inggris */
+
+.goal-image img:last-child {
+    opacity: 0;
+    z-index: 1;
+}
+
+
+/* Efek pergantian gambar */
+
+.goal-card:hover .goal-image img:first-child {
+    opacity: 0;
+    transform: scale(1.06);
+}
+
+.goal-card:hover .goal-image img:last-child {
+    opacity: 1;
+    transform: scale(1.06);
+}
+
+
+
+
+
+/* =========================================
+   10. FOOTER
+========================================= */
+
+.footer {
+    background: linear-gradient(
+        120deg,
+        #315b78,
+        #367f9e,
+        #4b9fb2
+    );
+
+    color: #ffffff;
+
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 18px;
+    opacity: 0.8;
+    font-size: 12px !important;
+}
+
+
+/* =========================================
+   11. TABLET
+========================================= */
+
+@media screen and (max-width: 1100px) {
+
+    .nav-menu {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .menu-link img {
+        width: 95px;
+        height: 55px;
+    }
+
+    .goals-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   12. HP
+========================================= */
+
+@media screen and (max-width: 650px) {
+
+    .header img {
+        height: 130px;
+    }
+
+    .nav-menu {
+        gap: 3px;
+        padding: 6px;
+    }
+
+    .menu-link img {
+        width: 75px;
+        height: 45px;
+    }
+
+    .dropdown-menu {
+        width: 220px;
+    }
+
+    .submenu-link img {
+        width: 185px;
+        height: 95px;
+    }
+
+    .intro-section,
+    .goals-section {
+        padding: 40px 5%;
+    }
+
+    .intro-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intro-image img {
+        min-height: 200px;
+    }
+
+    .intro-text {
+        padding: 22px;
+    }
+
+    .section-title h1 {
+        font-size: 27px;
+    }
+
+    .goals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 13px;
+    }
+
+    .goal-card {
+        padding: 9px;
+    }
+
+    .goal-card h3 {
+        font-size: 13px;
+    }
+
+    .goal-card p {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================
+   KHUSUS DROPDOWN SDGs
+========================================= */
+
+.sdgs-menu {
+    width: 170px;
+    padding: 8px;
+    gap: 5px;
+}
+
+/* Ukuran kotak gambar submenu SDGs */
+.sdgs-menu .submenu-link {
+    width: 145px;
+    padding: 2px;
+}
+
+/* Ukuran gambar submenu SDGs */
+.sdgs-menu .submenu-link img {
+    width: 130px;
+    height: 65px;
+
+    object-fit: contain;
+    display: block;
+}
+

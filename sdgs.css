@@ -1,0 +1,398 @@
+
+/* PENGATURAN DASAR */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: #ffe7f7;
+}
+
+
+/* HEADER */
+
+.header-banner {
+    background: linear-gradient(#ffb7e6, #ffd8f4);
+    text-align: center;
+    padding: 3px 0;
+    color: #7a007a;
+    font-family: "Lexend", sans-serif;
+    font-size: 22px;
+}
+
+
+/* SUBMENU */
+
+.subnav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 20px;
+    background: #ffffffd9;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(6px);
+    z-index: 100;
+}
+
+.subnav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #6a006a;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.subnav a:hover {
+    transform: scale(1.12);
+    background: #ffaae1;
+    color: white;
+}
+
+
+/* JUDUL UTAMA */
+
+.Apaitu {
+    background-color: rgb(252, 112, 159);
+    color: cornsilk;
+    font-size: 35px;
+    font-family: "Lexend", sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+
+/* KOTAK TUJUAN */
+
+.box {
+    width: 85%;
+    margin: 20px auto;
+    background: #92a9ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 30px rgba(0,0,0,0.15);
+}
+
+.box h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: "Lexend", sans-serif;
+}
+
+.box p {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #220880;
+}
+
+
+/* FOTO DAN PENJELASAN */
+
+.foto10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.foto10-img {
+    width: 220px;
+    border-radius: 12px;
+}
+
+.foto10 ul {
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+/* BAGIAN KONDISI */
+
+.card1 {
+    width: 90%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(0,0,0,0.15);
+}
+
+.card1 h2 {
+    text-align: center;
+    color: #58008b;
+    font-size: 28px;
+    font-family: "Lexend", sans-serif;
+}
+
+.card1 p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #222;
+}
+
+
+/* DATA STATISTIK */
+
+.data-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.data-card {
+    flex: 1;
+    min-width: 220px;
+    background: #ffe0f1;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+    border: 3px solid #ff89bc;
+    transition: 0.3s;
+}
+
+.data-card:hover {
+    transform: scale(1.05);
+    background: #ffd0e9;
+}
+
+.data-card h3 {
+    font-family: "Lexend", sans-serif;
+    font-size: 30px;
+    color: #a00070;
+}
+
+.data-card p {
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* FOTO KONDISI */
+
+.foto-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+}
+
+.kondisi-foto {
+    width: 65%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 6px solid #ff9bcf;
+}
+
+
+/* BAGIAN SOLUSI */
+
+.card2 {
+    width: 90%;
+    margin: 30px auto;
+    background: #f6e9ff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.card2:hover {
+    box-shadow: 0 6px 30px rgba(0,0,0,0.15);
+}
+
+.card2 h2 {
+    text-align: center;
+    color: #58008b;
+    font-size: 30px;
+    font-family: "Lexend", sans-serif;
+}
+
+.card2 p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #222;
+}
+
+
+/* JUDUL KECIL SOLUSI */
+
+.tempatbagus {
+    background-color: rgb(176, 204, 255);
+    font-weight: bold;
+    font-family: "Lexend", sans-serif;
+    display: inline-block;
+    padding: 2px 15px;
+    border-radius: 15px;
+    border: 4px solid rgb(61, 79, 214);
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.tempatbagus:hover {
+    background-color: #ff99c5;
+    transform: scale(1.03);
+}
+
+
+/* FOTO SOLUSI */
+
+.foto-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.solusi-foto {
+    width: 65%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 6px solid #bd065f;
+    transition: 0.3s;
+}
+
+.solusi-foto:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+
+/* REKOMENDASI PENULIS */
+
+.rekomendasi {
+    background: #ffd6ed;
+    padding: 25px;
+    margin-top: 35px;
+    border-radius: 18px;
+    border-left: 10px solid #ff65b5;
+}
+
+.rekomendasi h3 {
+    color: #800060;
+    font-family: "Lexend", sans-serif;
+    font-size: 23px;
+}
+
+
+
+/* TOMBOL KEMBALI */
+
+.backbtn {
+    display: inline-block;
+    background: #ff89bc;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.15);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: 0.3s;
+    z-index: 200;
+}
+
+.backbtn:hover {
+    background: rgb(255, 73, 170);
+    transform: scale(1.08);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+
+/* TAMPILAN HP */
+
+@media screen and (max-width: 768px) {
+
+    .header-banner {
+        font-size: 16px;
+    }
+
+    .subnav {
+        gap: 8px;
+    }
+
+    .subnav a {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .Apaitu {
+        font-size: 25px;
+    }
+
+    .foto10 {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .foto10-img {
+        width: 180px;
+    }
+
+    .foto10 ul {
+        padding-left: 20px;
+    }
+
+    .box,
+    .card1,
+    .card2,
+    .kesimpulan {
+        width: 92%;
+        padding: 18px;
+    }
+
+    .kondisi-foto,
+    .solusi-foto {
+        width: 100%;
+    }
+
+    .data-container {
+        flex-direction: column;
+    }
+
+    .backbtn {
+        bottom: 15px;
+        right: 15px;
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+}
+body {
+    background-image: url("purple.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}

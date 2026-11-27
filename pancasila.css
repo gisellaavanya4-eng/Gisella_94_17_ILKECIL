@@ -1,0 +1,241 @@
+
+/* =========================================
+   HALAMAN PANCASILA
+========================================= */
+
+.pancasila-page {
+    background: transparent;
+    padding: 35px 7%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* JUDUL UTAMA */
+
+.pancasila-title {
+    background: linear-gradient(135deg, #f5b8dc, #c5b9ff);
+    padding: 35px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 35px;
+    box-shadow: 0 5px 15px rgba(50, 50, 100, 0.12);
+}
+
+.pancasila-title h1 {
+    color: #593b78;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.pancasila-title h2 {
+    color: #76518f;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.pancasila-title p {
+    color: #493b59;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* BAGIAN KONTEN */
+
+.pancasila-section {
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    background: #f8d9ee;
+}
+
+.pancasila-section > h2 {
+    background: #b9c7ff;
+    color: #344477;
+    padding: 18px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.section-intro {
+    color: #493b59;
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+/* KOTAK INFORMASI */
+
+.pancasila-box {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 12px rgba(50, 50, 100, 0.10);
+    transition: all 0.3s ease;
+}
+
+.pancasila-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(50, 50, 100, 0.18);
+}
+
+.pancasila-box h3 {
+    color: #76518f;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.pancasila-box h4 {
+    color: #76518f;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.pancasila-box p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.pancasila-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* KARTU SILA */
+
+.sila-card {
+    background: #f3e4f5;
+    padding: 25px;
+    border-radius: 22px;
+    margin-bottom: 30px;
+    scroll-margin-top: 120px;
+}
+
+.sila-card > h3 {
+    color: #593b78;
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.sila-card > h4 {
+    color: #76518f;
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+/* GAMBAR LAMBANG SILA */
+
+.sila-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 10px;
+}
+
+.sila-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(50, 50, 100, 0.12);
+    transition: all 0.3s ease;
+}
+
+.sila-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(50, 50, 100, 0.2);
+}
+
+.image-caption {
+    text-align: center;
+    color: #76518f;
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+    .pancasila-page {
+        padding: 20px 4%;
+    }
+
+    .pancasila-title {
+        padding: 25px;
+    }
+
+    .pancasila-title h1 {
+        font-size: 27px;
+    }
+
+    .pancasila-title h2 {
+        font-size: 18px;
+    }
+
+    .pancasila-title p {
+        font-size: 14px;
+    }
+
+    .pancasila-section {
+        padding: 15px;
+    }
+
+    .pancasila-section > h2 {
+        font-size: 20px;
+    }
+
+    .pancasila-box {
+        padding: 18px;
+    }
+
+    .pancasila-box h3 {
+        font-size: 17px;
+    }
+
+    .pancasila-box h4 {
+        font-size: 16px;
+    }
+
+    .pancasila-box p {
+        font-size: 14px;
+    }
+
+    .sila-card {
+        padding: 15px;
+    }
+
+    .sila-card > h3 {
+        font-size: 23px;
+    }
+
+    .sila-card > h4 {
+        font-size: 16px;
+    }
+
+    .sila-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+
+}
+body {
+    background-image: url("purple.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}

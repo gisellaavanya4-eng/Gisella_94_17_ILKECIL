@@ -1,0 +1,396 @@
+
+/* =========================================
+   1. DASAR HALAMAN IPS
+========================================= */
+
+.ips-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 25px 7%;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: #55445f;
+    box-sizing: border-box;
+}
+
+.ips-page * {
+    box-sizing: border-box;
+}
+
+/* =========================================
+   2. SUBMENU IPS
+========================================= */
+
+.ips-subnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    padding: 15px;
+    margin-bottom: 35px;
+
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(120, 80, 130, 0.10);
+}
+
+.ips-subnav a {
+    color: #8c659c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.ips-subnav a:hover {
+    background: #e8d8f0;
+    color: #684779;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   3. JUDUL HALAMAN
+========================================= */
+
+.ips-hero {
+    text-align: center;
+    padding: 35px 20px;
+    margin-bottom: 35px;
+
+    background: linear-gradient(135deg, #f2dff0, #e7e0fa);
+    border-radius: 25px;
+}
+
+.ips-hero h1 {
+    color: #765384;
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.ips-hero p {
+    color: #8d7298;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* =========================================
+   4. BAGIAN UTAMA
+========================================= */
+
+.ips-section {
+    scroll-margin-top: 25px;
+}
+
+.ips-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin: 45px 0 25px;
+}
+
+.ips-heading span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 43px;
+    height: 43px;
+
+    background: #d9c5e8;
+    color: #684779;
+
+    border-radius: 13px;
+    font-weight: 700;
+}
+
+.ips-heading h2 {
+    color: #765384;
+    font-size: 25px;
+    margin: 0;
+}
+
+/* =========================================
+   5. BAGIAN POSTER
+========================================= */
+
+.poster-container {
+    background: white;
+    padding: 25px;
+    border-radius: 22px;
+
+    box-shadow: 0 5px 18px rgba(120, 80, 130, 0.10);
+}
+
+.poster-image {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.poster-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+
+    transition: 0.4s ease;
+}
+
+.poster-image img:hover {
+    transform: scale(1.04);
+    filter: brightness(1.05);
+    box-shadow: 0 10px 25px rgba(100, 70, 120, 0.25);
+}
+
+.poster-description h3 {
+    color: #89649b;
+    font-size: 19px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.poster-description p {
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 16px;
+    color: #65566c;
+}
+
+/* =========================================
+   6. PENJELASAN PEMBANGUNAN KONVENSIONAL
+========================================= */
+
+.ips-intro {
+    background: #f0e7f6;
+    padding: 25px 30px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.ips-intro p {
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: justify;
+    margin: 0 0 15px;
+}
+
+.ips-intro p:last-child {
+    margin-bottom: 0;
+}
+
+.ips-box {
+    background: white;
+    padding: 27px;
+    margin-bottom: 25px;
+    border-radius: 22px;
+
+    box-shadow: 0 5px 18px rgba(120, 80, 130, 0.09);
+}
+
+.ips-box h3 {
+    color: #89649b;
+    font-size: 19px;
+    margin: 0 0 18px;
+}
+
+.ips-box p {
+    color: #65566c;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.ips-box ul {
+    padding-left: 22px;
+    margin: 12px 0;
+}
+
+.ips-box li {
+    color: #65566c;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* =========================================
+   7. GAMBAR JENIS PEMBANGUNAN
+========================================= */
+
+.ips-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ips-image-card {
+    background: #fff8fc;
+    padding: 13px;
+    border-radius: 17px;
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+.ips-image-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 13px;
+
+    transition: 0.4s ease;
+}
+
+.ips-image-card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.08);
+}
+
+.ips-image-card h4 {
+    color: #89649b;
+    font-size: 15px;
+    margin: 15px 5px 8px;
+}
+
+.ips-image-card p {
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0 5px 8px;
+}
+
+.ips-image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(120, 80, 130, 0.13);
+}
+
+/* =========================================
+   8. CIRI-CIRI PEMBANGUNAN
+========================================= */
+
+.ips-feature {
+    background: #fff8fc;
+    padding: 20px;
+    border-left: 5px solid #c9a9dc;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.ips-feature h4 {
+    color: #89649b;
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+
+.ips-feature p {
+    margin: 0;
+}
+
+/* =========================================
+   9. DAMPAK POSITIF DAN NEGATIF
+========================================= */
+
+.ips-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.ips-impact {
+    padding: 22px;
+    border-radius: 17px;
+}
+
+.ips-impact h4 {
+    font-size: 16px;
+    margin: 0 0 15px;
+}
+
+.ips-impact ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.ips-impact li {
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.ips-impact.positive {
+    background: #edf6ee;
+}
+
+.ips-impact.positive h4 {
+    color: #56845f;
+}
+
+.ips-impact.negative {
+    background: #fff0f0;
+}
+
+.ips-impact.negative h4 {
+    color: #b66e79;
+}
+
+
+/* =========================================
+   10. RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .ips-page {
+        padding: 18px 5%;
+    }
+
+    .ips-hero h1 {
+        font-size: 23px;
+    }
+
+    .ips-heading h2 {
+        font-size: 21px;
+    }
+
+    .ips-image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ips-impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .poster-container,
+    .ips-box {
+        padding: 20px;
+    }
+
+    .ips-subnav {
+        gap: 5px;
+    }
+
+    .ips-subnav a {
+        font-size: 12px;
+        padding: 9px 13px;
+    }
+}
+body {
+    background-image: url("purple.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
